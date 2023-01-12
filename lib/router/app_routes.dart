@@ -42,10 +42,25 @@ class AppRoutes {
         screen: const InputScreen(),
         icon: Icons.input_rounded),
     MenuOption(
+        route: 'Login',
+        name: 'Iniciar Session',
+        screen: const SignInScreen(),
+        icon: Icons.login_outlined),
+    MenuOption(
+        route: 'SigIn',
+        name: 'Registrarse',
+        screen: const SignInScreen(),
+        icon: Icons.admin_panel_settings_outlined),
+    MenuOption(
         route: 'Slider',
         name: 'Slider and Checks',
         screen: const SliderScreen(),
         icon: Icons.slow_motion_video_rounded),
+    MenuOption(
+        route: 'listviewbuilder',
+        name: 'Infinite Scroll',
+        screen: const ListViewBuilderScreen(),
+        icon: Icons.build_circle_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

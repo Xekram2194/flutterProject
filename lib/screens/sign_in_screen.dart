@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_flutter/widgets/widgets.dart';
 
-class InputScreen extends StatelessWidget {
-  const InputScreen({Key? key}) : super(key: key);
+class SignInScreen extends StatelessWidget {
+  const SignInScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class InputScreen extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Registro de Postulante'),
+          title: const Text('Sig In - Registrarse'),
         ),
         body: SingleChildScrollView(
           child: Padding(
@@ -41,6 +41,16 @@ class InputScreen extends StatelessWidget {
                     keyboardType: TextInputType.text,
                     labelText: 'Apellido',
                     hintText: 'Apellido de Usuario',
+                    formProperty: 'last_name',
+                    formValues: formValues,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  CustomInputField(
+                    keyboardType: TextInputType.text,
+                    labelText: 'DNI',
+                    hintText: 'DNI',
                     formProperty: 'last_name',
                     formValues: formValues,
                   ),
